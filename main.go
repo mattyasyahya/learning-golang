@@ -4,6 +4,15 @@ import "fmt"
 
 func main() {
   LearningString()
+  LearningBoolean()
+}
+
+func LearningBoolean()  {
+  fmt.Println(true && true)
+  fmt.Println(true && false)
+  fmt.Println(true || true)
+  fmt.Println(true || false)
+  fmt.Println(!true)
 }
 
 func LearningString(){
