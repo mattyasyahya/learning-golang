@@ -3,5 +3,11 @@ package main
 import "fmt"
 
 func main() {
-  fmt.Println("Hello, world")
+  LearningString()
+}
+
+func LearningString(){
+  fmt.Println("Hello " + "World")
+  fmt.Println("Hello World"[1])
+  fmt.Println(len("Hello World"))
 }
