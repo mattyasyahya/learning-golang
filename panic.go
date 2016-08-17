@@ -3,9 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	defer func() {
-		str := recover()
-		fmt.Println(str)
-	}()
-	panic("Ups!!!!")
+	samplePanic()
+}
+
+func recoverPanic(){
+	str := recover()
+	fmt.Println(str)
+}
+
+func samplePanic(){
+	defer recoverPanic()
+	array := []int{1,2,3,4}
+	fmt.Println(array[10])
 }
