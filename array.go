@@ -8,6 +8,7 @@ func main() {
 	ShortArray()
 }
 
+// ShortArray demonstrate how to user array in go-lang
 func ShortArray() {
 	array := [5]int{
 		1, 2, 3, 4, 5,
@@ -18,6 +19,7 @@ func ShortArray() {
 	}
 }
 
+// Array demonstrate how to use array
 func Array() {
 	var array [10]int
 
@@ -34,7 +36,7 @@ func Array() {
 
 	fmt.Println(array)
 
-	var total int = 0
+	var total int
 
 	for i := 0; i < len(array); i++ {
 		total += array[i]

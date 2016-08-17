@@ -3,65 +3,71 @@ package main
 import "fmt"
 
 func main() {
-  LearningString()
-  LearningBoolean()
-  Variable()
-  Variable2()
-  InputProgram()
+	LearningString()
+	LearningBoolean()
+	Variable()
+	Variable2()
+	InputProgram()
 }
 
-func InputProgram()  {
-  fmt.Print("Enter a number :")
+// InputProgram demonstrate input value using fmt.Scanf
+func InputProgram() {
+	fmt.Print("Enter a number :")
 
-  var input float64
-  fmt.Scanf("%f", &input)
+	var input float64
+	fmt.Scanf("%f", &input)
 
-  output := input * 2
-  fmt.Println(output)
+	output := input * 2
+	fmt.Println(output)
 }
 
-func Const()  {
-  const x = "Eko Kurniawan"
-  // x = "Khannedy" // you can not do that
+// Const demonstrate how to create final variable in go-lang
+func Const() {
+	const x = "Eko Kurniawan"
+	// x = "Khannedy" // you can not do that
 }
 
-func Variable2()  {
-  x := "Eko Kurniawan"
-  fmt.Println(x)
+// Variable2 demonstrate how to create variable in go-lang
+func Variable2() {
+	x := "Eko Kurniawan"
+	fmt.Println(x)
 
-  var y = "Khannedy"
-  fmt.Println(y)
+	var y = "Khannedy"
+	fmt.Println(y)
 }
 
-func Variable()  {
-  var x string
+// Variable demonstrate how to create variable in go-lang
+func Variable() {
+	var x string
 
-  x = "first"
-  fmt.Println(x)
+	x = "first"
+	fmt.Println(x)
 
-  x += "second"
-  fmt.Println(x)
+	x += "second"
+	fmt.Println(x)
 
-  x = "first"
-  var y = "second"
+	x = "first"
+	var y = "second"
 
-  fmt.Println(x == y)
+	fmt.Println(x == y)
 
-  x = "hello"
-  y = "hello"
-  fmt.Println(x == y)
+	x = "hello"
+	y = "hello"
+	fmt.Println(x == y)
 }
 
-func LearningBoolean()  {
-  fmt.Println(true && true)
-  fmt.Println(true && false)
-  fmt.Println(true || true)
-  fmt.Println(true || false)
-  fmt.Println(!true)
+// LearningBoolean demonstrate how to use bool in go-lang
+func LearningBoolean() {
+	fmt.Println(true && true)
+	fmt.Println(true && false)
+	fmt.Println(true || true)
+	fmt.Println(true || false)
+	fmt.Println(!true)
 }
 
-func LearningString(){
-  fmt.Println("Hello " + "World")
-  fmt.Println("Hello World"[1])
-  fmt.Println(len("Hello World"))
+// LearningString demonstrate how to using string in go-lang
+func LearningString() {
+	fmt.Println("Hello " + "World")
+	fmt.Println("Hello World"[1])
+	fmt.Println(len("Hello World"))
 }
