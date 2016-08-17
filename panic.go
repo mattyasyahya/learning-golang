@@ -6,13 +6,13 @@ func main() {
 	samplePanic()
 }
 
-func recoverPanic(){
+func recoverPanic() {
 	str := recover()
 	fmt.Println(str)
 }
 
-func samplePanic(){
+func samplePanic() {
 	defer recoverPanic()
-	array := []int{1,2,3,4}
+	array := []int{1, 2, 3, 4}
 	fmt.Println(array[10])
 }
