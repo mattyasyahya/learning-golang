@@ -46,6 +46,15 @@ func incrementNumber() {
 	fmt.Println(increment())
 }
 
+func makeEvenGenerator() func() uint {
+	i := uint(0)
+	return func() (ret uint) {
+		ret = i
+		i += 2
+		return
+	}
+}
+
 func main() {
 	result := average([]float64{1, 2, 3, 4, 4, 5})
 	fmt.Println(result)
@@ -58,4 +67,9 @@ func main() {
 
 	closure()
 	incrementNumber()
+
+	nextEven := makeEvenGenerator()
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
 }
