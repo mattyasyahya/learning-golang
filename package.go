@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"khannedy/src/khannedy/math"
+	"khannedy/math"
 )
 
 func main() {
